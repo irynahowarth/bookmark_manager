@@ -17,11 +17,12 @@ feature 'Viewing links' do
     visit('/links')
     expect(page.status_code).to eq 200
 
-    within 'ul#links' do
+    within('ul#links') do
       expect(page).to have_content('Makers Academy')
     end
-
   end
 end
+
+# test failing due to web page not yet built?
 
 

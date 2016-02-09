@@ -1,8 +1,8 @@
 require 'sinatra/base'
 
-class Bookmark < Sinatra::Base
+class BookmarkManager < Sinatra::Base
   get '/links' do
-
+    erb :url_links
   end
 
   # start the server if ruby file executed directly
