@@ -11,4 +11,5 @@ gem 'capybara'
 gem 'sinatra'
 gem 'selenium-webdriver'
 gem 'shotgun'
+gem 'dm-transactions'
 end
