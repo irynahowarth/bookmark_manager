@@ -9,6 +9,7 @@ ruby '2.2.1'
   gem 'sinatra'
   gem 'shotgun'
   gem 'rake'
+  gem 'bcrypt'
 
 group :test do
   gem 'rspec-sinatra'
