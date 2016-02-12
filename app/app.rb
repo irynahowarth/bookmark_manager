@@ -20,8 +20,9 @@ class BookmarkManager < Sinatra::Base
 
   post '/links' do
     link = Link.create(url: params[:url], title: params[:title])
-    tag = Tag.create(tag: params[:tags])
-    link.tags << tag
+    params[:tags].split.each do |item|
+      link.tags << Tag.create(tag: item)
+    end
     link.save
     redirect to '/links'
   end
