@@ -8,6 +8,7 @@ ruby '2.2.1'
   gem 'dm-transactions'
   gem 'sinatra'
   gem 'shotgun'
+  gem 'rake'
 
 group :test do
   gem 'rspec-sinatra'
